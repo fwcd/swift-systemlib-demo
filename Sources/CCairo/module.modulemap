@@ -1,0 +1,5 @@
+module CCairo {
+    header "shim.h"
+    link "cairo"
+    export *
+}
