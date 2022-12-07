@@ -10,6 +10,7 @@ jobs:
         os: ['ubuntu-20.04']
         swift: ['5.7']
     
+    name: Build (${{ matrix.os }}, Swift ${{ matrix.swift }})
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
