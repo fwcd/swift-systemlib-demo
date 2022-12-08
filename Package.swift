@@ -19,6 +19,6 @@ let package = Package(
             name: "SystemlibDemo",
             dependencies: ["CCairo"]
         ),
-        .systemLibrary(name: "CCairo", pkgConfig: "cairo"),
+        .systemLibrary(name: "CCairo", pkgConfig: "cairo", providers: [.brew(["cairo"])]),
     ]
 )
