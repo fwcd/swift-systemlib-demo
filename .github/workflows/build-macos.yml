@@ -10,6 +10,8 @@ jobs:
         include:
         - os: 'macos-13'
           xcode: '14.3.1'
+        - os: 'macos-13'
+          xcode: '15.0'
       fail-fast: false
     
     name: Build (${{ matrix.os }}, Xcode ${{ matrix.xcode }})
